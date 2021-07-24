@@ -5,8 +5,8 @@ h1 {
 }
 
 body {
-  margin: 0;
   font-family: "Raleway", sans-serif;
+  margin: 0;
 }
 /*Les couleurs de la charte sont le bleu #0065FC, et sa version plus
  claire #DEEBFF ainsi que le gris pour le fond #F2F2F2.*/
@@ -16,9 +16,15 @@ body {
   width: 7rem;
   height: 3rem;
 }
-.header, .box, .info, .parti1, .parti2, .titre3{
-  margin-left: 2%;
-  margin-right: 2%;
+.header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 3%;
+}
+.ins{
+  display: none;
 }
 
 .navbar {
@@ -26,7 +32,12 @@ body {
   display: flex; /*pour mettre les elements cote a cote*/
   justify-content: space-between; /* placer nos element sur l'axe principal dans ce cas un a gauche l'autre a droite*/
   align-items: center;
-  width: 100%;
+}
+.bad{
+  display: flex;
+  align-items: center;
+  margin-right: 8%;
+
 }
 .navbar ul {
   display: flex;
@@ -35,9 +46,10 @@ body {
 }
 .navbar ul li a {
   color: black;
-  padding: 12px;
+  padding: 22px;
   margin-left: 20px;
   text-decoration: none;
+  margin: 37px;
 }
 .navbar ul li a:hover {
   color: blue;
@@ -49,10 +61,8 @@ body {
   text-decoration: none;
   margin-left: 34px;
 }
-.navigation_list{
-  display: flex;
-  align-items: center;
-  margin-right: 24px;
+.box{
+  margin-left: 3%;
 }
 
 
@@ -68,20 +78,23 @@ a {
 }
 .icon {
   background-color: #f2f2f2;
-  border-radius: 10px 0 0 10px;
-  padding: 9.5px;
+  border-radius: 15px 0 0 15px;
+  padding: 13.5px;
 }
 .input {
-  padding: 9px;
+  padding: 13px;
   border: 1px solid #f2f2f2;
 }
 .btn {
   cursor: pointer;
   background-color: #0065fc;
-  border-radius: 0 10px 10px 0;
-  padding: 10px;
+  border-radius: 0 15px 15px 0;
+  padding: 14px;
   border: none;
   color: white;
+}
+.change{
+  display: flex;
 }
 
 .btn:hover {
@@ -94,30 +107,50 @@ a {
 /* filtre boutons*/
 .filtre {
   display: flex;
+  flex-wrap: wrap;
   margin: 10px;
   align-items: center;
-  margin-left: 2%;
+  margin-left: 3%;
+  margin-top: 25px;
 }
-.btnf {
+.bouton1 {
   cursor: pointer;
-  padding: 15px;
-  color: blue;
-  background-color: beige;
-  border-radius: 30px;
+  border-radius: 2rem;
+  margin-left: 25px;
+  font-size: 16px;
+  background: transparent;
+  border: 2px solid #f2f2f2;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  padding-left: 22px;
+  padding-right: 59px;
+
   
 }
-.aioli {
-  cursor: pointer;
-  border: 1px solid gray;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    padding: 15px;
-    display: flex;
-    border-radius: 36px;
-    align-items: center;
-    margin-right: 25px;
+.btnf{
+  color: #0065fc;
+  background-color: #deebff;
+  padding: 15px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: -22px;
 }
+
+/* .aioli {
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #deebff;
+  color: #0065fc;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin-left: -22px;
+  margin-right: 8px;
+} */
 
 .bouton1:hover {
   background-color: #deebff;
@@ -132,6 +165,8 @@ a {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  margin-left: 3%;
+  margin-bottom: 17px;
 }
 .inf {
   font-size: 17px;
@@ -149,11 +184,11 @@ a {
 /* hebergement marseille*/
 .parti1 {
   display: flex;
+  margin-left: 3%;
 }
 .contenant1 {
   width: 65%;
-  height: 690px;
-  margin: 4px;
+  height: 730px;
   flex-direction: row;
   flex-wrap: wrap;
   background: #f2f2f2;
@@ -161,7 +196,7 @@ a {
 }
 .titre1 {
   width: inherit;
-  font-size: 13px;
+  font-size: 17px;
   margin-left: 19px;
 }
 .contenant1 .box1 {
@@ -176,12 +211,13 @@ a {
 }
 .contenant1 .box1 .imgbox img {
   width: 100%;
-  height: 249px;
+  height: 241px;
   object-fit: cover;
   border-radius: 13px;
   border: 5px solid white;
   box-shadow: 4px 5px 11px gray;
 }
+
 /* effets pour les 3 box*/
 .imgbox:hover {
   transform: translateY(-3px);
@@ -189,16 +225,11 @@ a {
 .imgbox2:hover {
   transform: translatex(-3px);
 }
+
 .xsize:hover {
   transform: translateY(-3px);
 }
 .smsize:hover {
-  transform: translateY(-3px);
-}
-.mediumsize:hover{
-  transform: translateY(-3px);
-}
-.intsize:hover{
   transform: translateY(-3px);
 }
 
@@ -225,7 +256,7 @@ img {
   font-size: 22px;
 }
 .titre2 {
-  font-size: 13px;
+  font-size: 17px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -233,22 +264,16 @@ img {
   margin-left: 19px;
   margin-right: 34px;
 }
-.etoile{
-  margin-bottom: 55px;
-}
-.etoile1{
-  margin-bottom: 55px;
-}
 .contenant1 .box1 .details .blabla {
   position: absolute;
   top: -11%;
   left: 2%;
   color: black;
-  font-size: 13px;
+  font-size: 12px;
 }
 .contenant2 {
-  width: 35%;
-  height: 695px;
+  width: 31%;
+  height: 730px;
   margin-left: 10px;
   display: flex;
   flex-direction: column;
@@ -294,7 +319,13 @@ img {
   top: 0%;
   left: 5%;
   color: black;
-  font-size: 13px;
+  font-size: 12px;
+}
+.etoile{
+  margin-bottom: 85px;
+}
+.etoile1{
+  margin-bottom: 65px;
 }
 /*  icon etoile */
 .active {
@@ -313,8 +344,8 @@ img {
 .apropos {
   display: flex;
   flex-direction: column;
-  margin-left: 2%;
-  margin-right: 9%;
+  margin-left: 3%;
+  margin-right: 10%;
 }
 .nos_hebergements {
   display: flex;
@@ -337,16 +368,16 @@ img {
 /* activité marseille*/
 .parti2 {
   display: flex;
+  margin-left: 3%;
   width: 100%;
-  height: 500px;
+  height: 469px;
 }
-.tutu .titi{
-  width: 100%;
+.titi{
+  width: 54%;
 }
-
 .xsize {
-  width: 365px;
-  height: 420px;
+  width: 300px;
+  height: 375px;
   border-radius: 11px;
   box-shadow: 4px 5px 11px gray;
   margin-right: 29px;
@@ -354,28 +385,18 @@ img {
   object-fit: cover;
 }
 .smsize {
-  width: 365px;
-  height: 155px;
+  width: 300px;
+  height: 150px;
   border-radius: 11px;
   box-shadow: 4px 5px 11px gray;
   margin-top: 22px;
   object-fit: cover;
 }
-.mediumsize{
-  width: 365px;
-  height: 240px;
-  border-radius: 11px;
-  box-shadow: 4px 5px 11px gray;
-  margin-top: 22px;
-  object-fit: cover;
+.medium{
+  height: 196px;
 }
-.intsize{
-  width: 365px;
-  height: 198px;
-  border-radius: 11px;
-  box-shadow: 4px 5px 11px gray;
-  margin-top: 22px;
-  object-fit: cover;
+.titi2{
+  margin-bottom: 50px;
 }
 
 .bloc4 {
@@ -387,47 +408,55 @@ img {
 }
 .activite2 {
   position: relative;
-  width: 100%;
+  width: 50%;
 }
-.activite3{
-  position: relative;
-  width: 100%;
+.titreactivité{
+  margin-left: 3%;
+  font-size: 17px;
 }
-.titi .blabla3 {
+.blabla4 {
   cursor: pointer;
   background: white;
-  z-index: 2;
   position: absolute;
-  text-align: inherit;
   left: 0;
-  right: 0;
+  right: -99px;
   bottom: 0;
-  top: 75%;
   color: black;
-  width: 100%;
-  font-size: 13px;
+  font-size: 11px;
   border-bottom-left-radius: 11px;
   border-bottom-right-radius: 11px;
 }
-.tutu .blabla3 {
+.blabla3 {
   cursor: pointer;
   background: white;
   position: absolute;
   text-align: left;
   left: 0;
-  right: 0;
-  bottom: 0;
-  top: 85%;
+  right: 72px;
+  bottom: -10px;
+  top: 90%;
   color: black;
-  width: 89%;
-  font-size: 13px;
+  font-size: 11px;
   border-bottom-left-radius: 11px;
   border-bottom-right-radius: 11px;
-  padding-left: 15px;
 }
-.pad{
-  padding-left: 14px;
+.blabla5{
+  cursor: pointer;
+  background: white;
+  position: absolute;
+  left: 0;
+  top: 56%;
+  right: -99px;
+  bottom: 54px;
+  color: black;
+  font-size: 11px;
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
 }
+.act{
+  margin-left: 10px;
+}
+
 
 /* .iconfa{
     background: black;
@@ -458,9 +487,6 @@ img {
     margin-left: 1%;
     display: flex;
     flex-direction: column-reverse;
-  }
-  .contenant1{
-
   }
   .titre2 {
     font-size: 16px;
@@ -498,7 +524,12 @@ img {
     color: black;
     font-size: 14px;
   }
-
+  .etoile{
+    margin-bottom: 115px;
+  }
+  .etoile1{
+    margin-bottom: 90px;
+  }
   .parti2 {
     height: auto;
     margin-left: 5%;
@@ -535,7 +566,7 @@ img {
     left: 4px;
     bottom: 14px;
     right: -6px;
-    opacity: 0.9;
+   
   }
   .contenant1 .box1 .details .blabla {
     top: -11%;
@@ -573,21 +604,18 @@ img {
   }
 }
 @media screen and (max-width: 1340px) {
-  .navbar,
   .box,
   .filtre,
   .info,
-  .parti1,
-  .parti2,
   .titre3 {
-    margin-left: 1%;
+    margin-left: 5%;
   }
   .end {
     width: 100%;
     margin-left: 0%;
   }
   .apropos {
-    margin-left: 0%;
+    margin-left: 5%;
   }
 }
 
@@ -599,38 +627,59 @@ img {
   }
   .logo {
     display: block;
-    margin-left: 10%;
+  }
+  .header{
+    align-items: unset;
+    flex-direction: column;
+    margin-left: 0%;
   }
   #inscrire {
-    position: relative;
-    bottom: 56px;
-    left: -50px;
+    display: none;
+  }
+  .bad{
+    display: block;
+    margin-right: 0%;
   }
   .navbar {
-    margin-left: 1%;
+    
     display: flex;
     flex-direction: column;
   }
   .navbar ul {
     width: 100%;
-    margin-left: 75px;
+    margin-left: 0px;
+    padding: 0 0 0 0;
   }
   .navbar ul li {
     width: 50%;
     display: flex;
     justify-content: center;
+    padding: 0px;
   }
   .navbar ul li a:hover {
     border-bottom: 1px solid#0065FC;
     border-top: none;
   }
+  .navbar ul li a{
+    margin: 0px;
+  }
   .box {
-    margin-left: 23px;
+    margin-left: 0px;
+    text-align: center;
+  }
+  .recherche{
+    justify-content: center;
   }
   .filtre {
-    margin-left: 1%;
+    margin-left: 0%;
     display: flex;
     flex-wrap: wrap;
+  }
+  .bouton1{
+    font-size: 15px;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    font-weight: 900;
   }
   #rch {
     display: none;
@@ -639,8 +688,9 @@ img {
     display: block;
   }
   .inf {
-    font-size: 15px;
+    font-size: 13px;
     margin-right: 10px;
+    margin-top: 0px;
   }
   .info {
     display: flex;
@@ -649,12 +699,12 @@ img {
     font-size: 17px;
   }
   .parti1 {
-    margin-left: 1%;
+    margin-left: 0%;
     display: flex;
     flex-direction: column-reverse;
   }
   .contenant1 {
-    width: 96%;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -663,7 +713,7 @@ img {
   }
   .contenant1 .box1 {
     position: relative;
-    width: 92%;
+    width: 94%;
     height: 310px;
     margin: 10px;
     display: inline-block;
@@ -686,23 +736,25 @@ img {
   }
   .titre1 {
     width: inherit;
-    font-size: 16px;
+    font-size: 14px;
   }
   .titre2 {
-    font-size: 16px;
+    font-size: 14px;
     justify-content: space-between;
-    margin-left: 19px;
+    margin-left: 27px;
     margin-right: 26px;
   }
 
   .contenant2 {
-    width: 95%;
+    width: 100%;
     height: auto;
+    margin-left: 0px;
+    border-radius: 0px;
   }
   .contenant2 .box2 {
     width: 92%;
     height: 240px;
-    margin-left: 2px;
+    margin-left: 3%;
   }
   .contenant2 .box2 .imgbox2 img {
     width: 100%;
@@ -723,6 +775,9 @@ img {
     left: 6%;
     color: black;
     font-size: 14px;
+  }
+  .etoile1{
+    margin-bottom: 75px;
   }
   .parti2 {
     height: auto;
@@ -761,23 +816,100 @@ img {
     width: 100%;
     margin-left: 0%;
   }
-  .apropos,
+  
   .nos_hebergements,
   .Assistance {
+    margin-left: 5%;
+  }
+  .apropos{
     margin-left: 1%;
+    margin-right: 5%;
+  }
+  .allo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .ins{
+    display: block;
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
   }
 }
 @media screen and (max-width: 557px) {
   .end {
-    width: 96%;
-    margin-left: 3%;
+    width: 100%;
+    margin-left: 0%;
     display: flex;
     flex-direction: column;
   }
-  .navbar ul {
-    margin-left: 11px;
+  .inf{
+    margin-top: -17px;
+  }
+  
+  .contenant2 .box2{
+    height: 191px;
+    margin-left: 10px;
+  }
+  .contenant2 .box2 .imgbox2 img{
+    height: 180px;
+    
+  }
+  .contenant2 .box2 .details{
+    top: 1px;
+    left: 53%;
+    bottom: 4px;
+  }
+  .contenant2 .box2 .details .blabla2{
+    font-size: 12px;
+  }
+  .etoile{
+    margin-bottom: 79px;
   }
   #inscrire {
-    left: -17px;
+    display: none;
+  }
+  .change{
+    display: flex;
+  }
+  .contenant1 .box1{
+    height: 230px;
+  }
+  .contenant1{
+    align-items: center;
+  }
+  .contenant1 .box1 .imgbox img {
+    height: 228px;
+  }
+  .contenant1 .box1 .details{
+    top: 69%;
+    bottom: -6px;
+  }
+  .bouton1{
+    margin-left: 5px;
+  }
+  .navbar{
+    width: 100%;
+  }
+  .logo{
+    
+  }
+  .contenant2{
+    width: 100%;
+    margin-left: 0%;
+    border-radius: 0;
+    align-items: initial;
+  }
+  .apropos{
+    margin-left: 5%;
+  }
+}
+@media screen and (max-width: 380px){
+  
+  header{
+    width: 100%;
   }
 }
