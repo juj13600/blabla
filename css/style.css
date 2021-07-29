@@ -327,6 +327,9 @@ img {
 .etoile1{
   margin-bottom: 65px;
 }
+.etoile2{
+  margin-bottom: 85px;
+}
 /*  icon etoile */
 .active {
   color: #0065fc;
@@ -366,96 +369,8 @@ img {
 }
 
 /* activité marseille*/
-.parti2 {
-  display: flex;
-  margin-left: 3%;
-  width: 100%;
-  height: 469px;
-}
-.titi{
-  width: 54%;
-}
-.xsize {
-  width: 300px;
-  height: 375px;
-  border-radius: 11px;
-  box-shadow: 4px 5px 11px gray;
-  margin-right: 29px;
-  margin-top: 22px;
-  object-fit: cover;
-}
-.smsize {
-  width: 300px;
-  height: 150px;
-  border-radius: 11px;
-  box-shadow: 4px 5px 11px gray;
-  margin-top: 22px;
-  object-fit: cover;
-}
-.medium{
-  height: 196px;
-}
-.titi2{
-  margin-bottom: 50px;
-}
 
-.bloc4 {
-  width: 50%;
-  height: 388px;
-  margin: 0px;
-  border-radius: 10px;
-  display: flex;
-}
-.activite2 {
-  position: relative;
-  width: 50%;
-}
-.titreactivité{
-  margin-left: 3%;
-  font-size: 17px;
-}
-.blabla4 {
-  cursor: pointer;
-  background: white;
-  position: absolute;
-  left: 0;
-  right: -99px;
-  bottom: 0;
-  color: black;
-  font-size: 11px;
-  border-bottom-left-radius: 11px;
-  border-bottom-right-radius: 11px;
-}
-.blabla3 {
-  cursor: pointer;
-  background: white;
-  position: absolute;
-  text-align: left;
-  left: 0;
-  right: 72px;
-  bottom: -10px;
-  top: 90%;
-  color: black;
-  font-size: 11px;
-  border-bottom-left-radius: 11px;
-  border-bottom-right-radius: 11px;
-}
-.blabla5{
-  cursor: pointer;
-  background: white;
-  position: absolute;
-  left: 0;
-  top: 56%;
-  right: -99px;
-  bottom: 54px;
-  color: black;
-  font-size: 11px;
-  border-bottom-left-radius: 11px;
-  border-bottom-right-radius: 11px;
-}
-.act{
-  margin-left: 10px;
-}
+
 .titre10{
   width: 100%;
   margin: 15px 0 15px 3%;
@@ -463,63 +378,136 @@ img {
 
 .container{
   display: flex;
-  width: 100%;
-  height: 600px;
+  height: auto;
   margin-left: 3%;
+  margin-right: 2%;
 }
 .boc1{
   display: flex;
   width: 50%;
 }
+.room{
+  position: relative;
+  height: 250px;
+}
+.room1{
+  position: relative;
+  height: 220px;
+}
 .photogrande{
   width: 50%;
-  height: 340px;
+  height: 400px;
+  position: relative;
 }
 .photo-port{
+  position: absolute;
+  z-index: 1;
   width: 95%;
-  height: 500px;
+  height: 400px;
   object-fit: cover;
-  border-top-left-radius: 11px;
-  border-top-right-radius: 11px;
-  box-shadow: 4px -3px 10px gray;
+  border-radius: 11px;
+  box-shadow: 4px 5px 11px gray;
 }
 .photo2{
   display: flex;
   flex-direction: column;
   width: 50%;
 }
+.image12{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height:250px ;
+}
 .photo-pomegues{
   width: 95%;
-  height: 250px;
+  height: 220px;
   object-fit: cover;
-  border-top-left-radius: 11px;
-  border-top-right-radius: 11px;
-  box-shadow: 4px -3px 10px gray;
+  border-radius: 11px;
+  box-shadow: 4px 5px 11px gray;
 
 }
 .photo-frioul{
   width: 95%;
-  height: 180px;
+  height: 150px;
   object-fit: cover;
-  border-top-left-radius: 11px;
-  border-top-right-radius: 11px;
+  border-radius: 11px;
+  border-radius: 11px;
   box-shadow: 4px 5px 11px gray;
 
 }
-.commentaire1, .commentaire{
-  border-bottom-left-radius: 11px;
-  border-bottom-right-radius: 11px;
+.photo-garde{
+  width: 95%;
+  height: 180px;
+  border-radius: 11px;
   box-shadow: 4px 5px 11px gray;
+}
+.photo-longchamp{
+  width: 95%;
+  height: 180px;
+  border-radius: 11px;
+  box-shadow: 4px 5px 11px gray;
+}
+.commentaire{
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  background-color: white;
   font-weight: bold;
   width: 95%;
-  margin-bottom: 31px;
-  padding-bottom: 17px;
-
-  
+  top: 88%;
+  left: 0px;
+  bottom: 0px;
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+}
+.commentaire1{
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+  font-weight: bold;
+  width: 95%; 
+  background-color: white;
+  top: 70%;
+  bottom: 30px;
+}
+.commentaire2{
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+  font-weight: bold;
+  width: 95%; 
+  background-color: white;
+  top: 41%;
+  bottom: 100px;
+}
+.commentaire3{
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+  font-weight: bold;
+  width: 95%;
+  background-color: white;
+  top: 60%;
+  bottom: 40px;
 }
 .commentaire p{
-  margin: 0;
+  margin-left: 10px;
+}.commentaire1 p{
+  margin-left: 10px;
+}.commentaire2 p{
+  margin-left: 10px;
 }
+.commentaire3 p{
+  margin-left: 10px;
+}
+
 
 /* .iconfa{
     background: black;
@@ -545,6 +533,22 @@ img {
     }
 
 } */
+@media screen and (max-width: 1656px){
+.etoile2{
+  margin-bottom: 64px;
+}
+}
+@media screen and (max-width: 1621px){
+  .etoile{
+    margin-bottom: 64px;
+  }
+}
+@media screen and (max-width: 1190px){
+  .etoile1{
+    margin-bottom: 43px;
+  }
+
+}
 
 @media screen and (max-width: 1100px) {
   .parti1 {
@@ -671,8 +675,11 @@ img {
   .box,
   .filtre,
   .info,
-  .titre3 {
-    margin-left: 5%;
+  .titre3, 
+  .parti1,
+  .container,
+  .header {
+    margin-left: 0%;
   }
   .end {
     width: 100%;
