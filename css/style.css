@@ -456,7 +456,70 @@ img {
 .act{
   margin-left: 10px;
 }
+.titre10{
+  width: 100%;
+  margin: 15px 0 15px 3%;
+}
 
+.container{
+  display: flex;
+  width: 100%;
+  height: 600px;
+  margin-left: 3%;
+}
+.boc1{
+  display: flex;
+  width: 50%;
+}
+.photogrande{
+  width: 50%;
+  height: 340px;
+}
+.photo-port{
+  width: 95%;
+  height: 500px;
+  object-fit: cover;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+  box-shadow: 4px -3px 10px gray;
+}
+.photo2{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.photo-pomegues{
+  width: 95%;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+  box-shadow: 4px -3px 10px gray;
+
+}
+.photo-frioul{
+  width: 95%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+  box-shadow: 4px 5px 11px gray;
+
+}
+.commentaire1, .commentaire{
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+  box-shadow: 4px 5px 11px gray;
+  font-weight: bold;
+  width: 95%;
+  margin-bottom: 31px;
+  padding-bottom: 17px;
+
+  
+}
+.commentaire p{
+  margin: 0;
+}
 
 /* .iconfa{
     background: black;
@@ -482,7 +545,8 @@ img {
     }
 
 } */
-@media screen and (max-width: 1090px) {
+
+@media screen and (max-width: 1100px) {
   .parti1 {
     margin-left: 1%;
     display: flex;
@@ -720,14 +784,14 @@ img {
     border-radius: 2rem;
   }
   .contenant1 .box1 .imgbox img {
-    width: 100%;
+    width: 97%;
     height: 290px;
   }
   .contenant1 .box1 .details {
     top: 73%;
     left: 4px;
     bottom: 14px;
-    right: -6px;
+    right: 6px;
   }
   .contenant1 .box1 .details .blabla {
     top: -19%;
@@ -735,7 +799,7 @@ img {
     font-size: 11px;
   }
   .titre1 {
-    width: inherit;
+    width: 94%;
     font-size: 14px;
   }
   .titre2 {
@@ -783,7 +847,7 @@ img {
     height: auto;
     margin-left: 5%;
     display: flex;
-    flex-direction: column;
+    
   }
   .titre3 {
     margin-left: 4%;
@@ -795,22 +859,25 @@ img {
     flex-direction: column;
   }
   .xsize {
-    width: 100%;
+    width: 319px;
     height: 237px;
   }
   .smsize {
-    width: 100%;
+    width: 319px;
     height: 237px;
   }
-  .tutu .blabla3 {
-    width: 100%;
-    top: 82%;
-    font-size: 14px;
+  .blabla3 {
+    bottom: 4px;
+    top: 80%;
+    right:-135px;
+    font-size: 11px;
   }
-  .titi .blabla3 {
-    top: 82%;
-    font-size: 14px;
-    width: 100%;
+  .titi2{
+    margin-bottom: 0px;
+  }
+  .blabla4{
+    right: -220px;
+    bottom: 4px;
   }
   .end {
     width: 100%;
@@ -848,6 +915,9 @@ img {
   }
   .inf{
     margin-top: -17px;
+  }
+  .parti2{
+    flex-direction: column;
   }
   
   .contenant2 .box2{
@@ -897,19 +967,56 @@ img {
   .logo{
     
   }
+  .parti2{
+    margin-left: 0%;
+  }
+  .xsize{
+    margin-right: 0px;
+    width: 390px;
+    margin-left: 10px;
+  }
+  .smsize{
+    width: 390px;
+    margin-left: 10px;
+  }
   .contenant2{
     width: 100%;
     margin-left: 0%;
     border-radius: 0;
     align-items: initial;
   }
+  .blabla5{
+    right: -297px;
+    top: 80%;
+    bottom: 4px;
+    left: 10px;
+  }
+  .blabla3{
+    top: 78%;
+    right: -210px;
+    bottom: 4px;
+  }
+  .blabla4{
+    left: 10px;
+    right: -297px;
+    bottom: 4px;
+  }
   .apropos{
     margin-left: 5%;
+  }
+  .titi2{
+    margin-bottom: 0px;
   }
 }
 @media screen and (max-width: 380px){
   
   header{
     width: 100%;
+  }
+  .bouton1{
+    font-size: 13px;
+  }
+  .container{
+    
   }
 }
