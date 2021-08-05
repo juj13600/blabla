@@ -17,7 +17,7 @@ body {
   height: 3rem;
 }
 .header{
-  width: 100%;
+  width: 92%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,7 +36,6 @@ body {
 .bad{
   display: flex;
   align-items: center;
-  margin-right: 8%;
 
 }
 .navbar ul {
@@ -372,8 +371,12 @@ img {
 
 
 .titre10{
-  width: 100%;
-  margin: 15px 0 15px 3%;
+  width: 50%;
+  font-weight: bold;
+  font-size: 26px;
+  margin-top: 30px;
+  margin-bottom: 29px;
+  margin-left: 53px;
 }
 
 .container{
@@ -428,6 +431,7 @@ img {
 
 }
 .photo-frioul{
+  object-fit: cover;
   width: 95%;
   height: 150px;
   object-fit: cover;
@@ -437,6 +441,7 @@ img {
 
 }
 .photo-garde{
+  object-fit: cover;
   width: 95%;
   height: 180px;
   border-radius: 11px;
@@ -551,6 +556,9 @@ img {
 }
 
 @media screen and (max-width: 1100px) {
+  .header{
+    width: 100%;
+  }
   .parti1 {
     margin-left: 1%;
     display: flex;
@@ -560,17 +568,21 @@ img {
     font-size: 16px;
     justify-content: space-between;
     margin-left: 19px;
-    margin-right: 70px;
+    margin-right: 17px;
   }
 
   .contenant2 {
-    width: 95%;
+    width: 100%;
     height: auto;
+    margin-left: 0px;
+    border-radius: 0rem;
   }
   .contenant2 .box2 {
-    width: 92%;
+    width: 90%;
     height: 240px;
-    margin-left: 2px;
+    margin-left: 5px;
+    border-radius: 0px;
+    margin-left: 38px;
   }
   .contenant2 .box2 .imgbox2 img {
     width: 100%;
@@ -596,7 +608,10 @@ img {
     margin-bottom: 115px;
   }
   .etoile1{
-    margin-bottom: 90px;
+    margin-bottom: 115px;
+  }
+  .etoile2{
+    margin-bottom: 115px;
   }
   .parti2 {
     height: auto;
@@ -605,7 +620,6 @@ img {
     margin-bottom: 28px;
   }
   .parti1 {
-    margin-left: 1%;
     display: flex;
     flex-direction: column-reverse;
   }
@@ -616,6 +630,7 @@ img {
     flex-direction: column;
     flex-wrap: nowrap;
     background: none;
+    align-items: center;
   }
   .contenant1 .box1 {
     position: relative;
@@ -644,31 +659,26 @@ img {
   .titre1 {
     width: inherit;
     font-size: 16px;
+    margin-left: 44px;
   }
-  .bloc4 {
-    width: 92%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .xsize {
-    width: 79%;
-    height: 230px;
-  }
-  .smsize {
-    width: 79%;
-    height: 230px;
-  }
-  .titi .blabla3 {
-    width: 79%;
-    top: 79%;
-  }
-  .tutu .blabla3 {
-    top: 79%;
-    width: 79%;
-  }
+  
+  
   .apropos {
     margin-left: 0%;
+  }
+  .container{
+    flex-direction: column;
+    margin-left: 3%;
+  }
+  .boc1{
+    width: 100%;
+  }
+  .titre10{
+    font-weight: bold;
+    font-size: 26px;
+    margin-top: 30px;
+    margin-bottom: 29px;
+    margin-left: 34px;
   }
 }
 @media screen and (max-width: 1340px) {
@@ -677,7 +687,6 @@ img {
   .info,
   .titre3, 
   .parti1,
-  .container,
   .header {
     margin-left: 0%;
   }
@@ -687,6 +696,11 @@ img {
   }
   .apropos {
     margin-left: 5%;
+  }
+}
+@media screen and (max-width: 1005px){
+  .etoile1{
+    margin-bottom: 90px;
   }
 }
 
@@ -808,6 +822,7 @@ img {
   .titre1 {
     width: 94%;
     font-size: 14px;
+    margin-left: 14px;
   }
   .titre2 {
     font-size: 14px;
@@ -912,6 +927,53 @@ img {
     font-weight: bold;
     text-decoration: none;
   }
+  .boc1{
+    flex-direction: column;
+  }
+  .photogrande{
+    width: 100%;
+    height: 280px;
+    margin-bottom: 25px;
+  }
+  .photo-port{
+    height: 280px;
+  }
+  .photo2{
+    width: 100%;
+  }
+  .photo-pomegues{
+    height: 280px;
+  }
+  .photo-frioul{
+    height: 280px;
+  }
+  .room{
+    height: 300px;
+  }
+  .commentaire1{
+    bottom: 20px;
+    top:75%;
+  }
+  .commentaire{
+    top: 81%;
+  }
+  .commentaire2{
+    bottom: 20px;
+    top: 75%;
+  }
+  .room1{
+    height: 300px;
+  }
+  .photo-garde{
+    height: 280px;
+  }
+  .commentaire3{
+    bottom: 20px;
+    top: 75%;
+  }
+  .photo-longchamp{
+    height: 280px;
+  }
 }
 @media screen and (max-width: 557px) {
   .end {
@@ -967,6 +1029,7 @@ img {
   }
   .bouton1{
     margin-left: 5px;
+    font-size: 14px;
   }
   .navbar{
     width: 100%;
@@ -1013,6 +1076,27 @@ img {
   }
   .titi2{
     margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 656px){
+  .etoile2{
+    margin-bottom: 95px;
+  }
+}
+@media screen and (max-width: 642px){
+  .etoile{
+    margin-bottom: 95px;
+  }
+}
+@media screen and (max-width: 476px){
+  .etoile2{
+    margin-bottom: 75px;
+  }
+
+}
+@media screen and (max-width: 466px){
+  .etoile{
+    margin-bottom: 75px;
   }
 }
 @media screen and (max-width: 380px){
