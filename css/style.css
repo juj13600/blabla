@@ -635,7 +635,7 @@ img {
     margin-bottom: 115px;
   }
   .etoile1{
-    margin-bottom: 115px;
+    margin-bottom: 104px;
   }
   .etoile2{
     margin-bottom: 115px;
@@ -914,11 +914,11 @@ img {
   }
   
   .Assistance {
-    margin-left: 5%;
+    margin-left: 3%;
   }
   .nos_hebergements{
     margin-right: 3%;
-    margin-left: 5%;
+    margin-left: 3%;
   }
   .apropos{
     margin-left: 1%;
@@ -987,7 +987,7 @@ img {
 }
 @media screen and (max-width: 673px){
   .etoile2{
-    margin-bottom: 85px ;
+    margin-bottom: 110px ;
   }
 }
 @media screen and (max-width: 659px){
@@ -997,26 +997,25 @@ img {
 }
 @media screen and (max-width: 656px){
   .etoile2{
-    margin-bottom: 90px;
+    margin-bottom: 100px;
   }
 }
 @media screen and (max-width: 642px){
   .etoile{
     margin-bottom: 95px;
   }
-}
-@media screen and (max-width: 476px){
-  .etoile2{
-    margin-bottom: 75px;
+  .end{
+    font-size: 13px;
   }
-
 }
+
 @media screen and (max-width: 557px) {
   .end {
     width: 100%;
     margin-left: 0%;
     display: flex;
     flex-direction: column;
+    font-size: 13px;
   }
   .inf{
     margin-top: -17px;
@@ -1113,8 +1112,27 @@ img {
   .titi2{
     margin-bottom: 0px;
   }
+  .nos_hebergements{
+    margin-left: 5%;
+  }
+  .Assistance{
+    margin-left: 5%;
+  }
 }
+@media screen and (max-width: 498px){
+  .etoile2{
+    margin-bottom: 76px;
+  }
+  .etoile{
+    margin-bottom: 76px;
+  }
+}
+@media screen and (max-width: 476px){
+  .etoile2{
+    margin-bottom: 75px;
+  }
 
+}
 @media screen and (max-width: 466px){
   .etoile{
     margin-bottom: 75px;
