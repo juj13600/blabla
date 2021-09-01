@@ -866,7 +866,7 @@ img {
     top: 0%;
     left: 6%;
     color: black;
-    font-size: 14px;
+    font-size: 13px;
   }
   .etoile1{
     margin-bottom: 85px;
@@ -997,7 +997,7 @@ img {
 }
 @media screen and (max-width: 656px){
   .etoile2{
-    margin-bottom: 82px;
+    margin-bottom: 90px;
   }
 }
 @media screen and (max-width: 642px){
@@ -1042,7 +1042,7 @@ img {
     font-size: 12px;
   }
   .etoile{
-    margin-bottom: 79px;
+    margin-bottom: 90px;
   }
   #inscrire {
     display: none;
