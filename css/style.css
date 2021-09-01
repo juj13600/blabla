@@ -548,12 +548,7 @@ img {
     margin-bottom: 64px;
   }
 }
-@media screen and (max-width: 1190px){
-  .etoile1{
-    margin-bottom: 63px;
-  }
 
-}
 
 
 @media screen and (max-width: 1340px) {
@@ -573,6 +568,12 @@ img {
     margin-left: 5%;
   }
 }
+@media screen and (max-width: 1190px){
+  .etoile1{
+    margin-bottom: 63px;
+  }
+
+}
 @media screen and (max-width: 1155px){
   .etoile1{
     margin-bottom: 44px;
@@ -581,6 +582,9 @@ img {
 @media screen and (max-width: 1100px) {
   .header{
     width: 100%;
+  }
+  .bad{
+    margin-right: 2%;
   }
   .parti1 {
     margin-left: 0%;
