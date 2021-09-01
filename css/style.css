@@ -753,6 +753,10 @@ img {
   }
   .navbar ul li a{
     margin: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #F2F2F2;
   }
   .box {
     margin-left: 0px;
