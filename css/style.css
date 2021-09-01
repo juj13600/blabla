@@ -921,20 +921,23 @@ img {
     margin-left: 0%;
   }
   
-  .nos_hebergements,
   .Assistance {
+    margin-left: 5%;
+  }
+  .nos_hebergements{
+    margin-right: 3%;
     margin-left: 5%;
   }
   .apropos{
     margin-left: 1%;
-    margin-right: 5%;
+    margin-right: 1%;
   }
   .allo{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-left: 2%;
-    margin-right: 2%;
+    margin-right: 3%;
   }
   .ins{
     display: block;
